@@ -83,13 +83,18 @@
     "openai": "^3.3.0",
     "request": "^2.88.2",
     "ssh2": "^1.14.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/macksyn/Lussh-AI.git"
-  },
-  "bugs": {
-    "url": "https://github.com/macksyn/Lussh-AI/issues"
-  },
-  "homepage": "https://github.com/macksyn/Lussh-AI"
+ },
+   "directories": {
+      "lib": "lib",
+      "plugins" :"lib/plugins"
+   },
+   "devDependencies": {
+      "pino": "^7.0.5"
+   },
+   "--repository": {
+      "type": "git",
+      "url": "git+https://github.com/macksyn/Lussh-AI.git"
+   },
+   "--bugs": { "url": "https://github.com/macksyn/Lussh-AI/issues" },
+   "--homepage": "https://github.com/macksyn/Lussh-AI#readme"
 }
