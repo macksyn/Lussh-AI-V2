@@ -7,21 +7,21 @@ const axios = require('axios');
 // Credit : @theJayy_
 // Ori : @callmevinz
 
-//=== Edit Disini 🔥
-global.namabot = "AiBotzz-MD"
-global.namaowner = "Sanjaya"
+//=== Edit Here 🔥
+global.namabot = "LUSSH-AI"
+global.namaowner = "Alex Macksyn"
 global.packname = "Sticker by"
 global.creator = "SanjayaAds"
-global.author = "AiBotzz-MD\n\nBot WhatsApp"
-global.wm = "AiBotzz-MD"
+global.author = "Macksyn Inc\n\nBot WhatsApp"
+global.wm = "Lussh-AI"
 global.syt = "https://www.youtube.com/@SanjayaAds"
 global.sgc = "https://chat.whatsapp.com/BhLOaPSL3SKCw9QAnudLDw"
 global.idgc = "120363250058335630@g.us"
 global.email = "OwnerKuu@gmail.com"
 global.sig = "https://Instagram.com/@Jayy_yete"
 global.myweb = "https://shoplinks.to/AiBotzzSH"
-global.footer_text = "© AiBotzz-MD"
-global.owner = ['62896540577165']
+global.footer_text = "© Lussh-AI"
+global.owner = ['2348089782988']
 global.gifin = "https://telegra.ph/file/0cf1c5039a2be1b66ef15.mp4"
 global.thumb = "https://telegra.ph/file/6b25dc6f38b32804d7e59.jpg"
 global.thumb2 = "https://telegra.ph/file/c74dda31793574f84070e.jpg"
@@ -29,11 +29,11 @@ global.mark = "https://telegra.ph/file/9b67cb5ed0ff661027366.jpg"
 global.themeemoji = '🌐'
 
 //=== Introgasi 🗿
-global.umurowner = "Privat" // Terserah🗿
+global.umurowner = "Privat" // Your Choice🗿
 global.kelasowner = "Privat" // Terserah🗿
 global.statusowner = "Jomblo" // Terserah
 global.lakiapacewek = "Lanang" // Terserah
-// Kalo mau gak diisi juga gak papa
+// If you don't want to fill it in, that's okay
 
 //=== Payment 😋
 global.qris = "https://telegra.ph/file/6a367b58ed14c5009179d.jpg"
@@ -60,10 +60,10 @@ global.APIKeys = {
 }
 
 //=== Gak Tau 🐦
-global.pairingNumber = "6283831409855"
-// Nomor whatsapp bot lu
+global.pairingNumber = "2348089782988"
+// Your whatsapp bot number
 global.prefix = ['-_-'] 
-// Jangan diubah
+// Dont Change It
 global.tekspushcontact = "Izin Push" 
 // Terserah
 global.typemenu = "v6"
@@ -105,10 +105,10 @@ global.mess = {
 }
 
 // Setting Game
-global.gamewaktu = 60 // Game waktu
-global.bmin = 1000 // Balance minimal 
-global.bmax = 5000 // Balance maksimal
-global.limit = 30 // Limit user
+global.gamewaktu = 60 // Game Time
+global.bmin = 1000 // Minimum Balance 
+global.bmax = 5000 // Maximum Balance
+global.limit = 30 // User Limit
 
 // Database Game
 global.suit = {};
