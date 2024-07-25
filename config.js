@@ -2,23 +2,23 @@ const fs = require('fs')
 const chalk = require('chalk')
 const axios = require('axios');
 
-// INGAT CUY INI CUMA SC HASIL RENAME ATAU RECODE YA
+// REMEMBER GUYS, THIS IS THE OFFICIAL CODE
 
-// Credit : @theJayy_
-// Ori : @callmevinz
+// Credit : @macksyn_
+// Original : @macksyn
 
 //=== Edit Here 🔥
 global.namabot = "LUSSH-AI"
 global.namaowner = "Alex Macksyn"
 global.packname = "Sticker by"
-global.creator = "SanjayaAds"
+global.creator = "Alex Macksyn"
 global.author = "Macksyn Inc\n\nBot WhatsApp"
 global.wm = "Lussh-AI"
-global.syt = "https://www.youtube.com/@SanjayaAds"
+global.syt = "https://www.youtube.com/@macksyn"
 global.sgc = "https://chat.whatsapp.com/BhLOaPSL3SKCw9QAnudLDw"
 global.idgc = "120363250058335630@g.us"
-global.email = "OwnerKuu@gmail.com"
-global.sig = "https://Instagram.com/@Jayy_yete"
+global.email = "macksyn007@gmail.com"
+global.sig = "https://Instagram.com/@macksyn"
 global.myweb = "https://shoplinks.to/AiBotzzSH"
 global.footer_text = "© Lussh-AI"
 global.owner = ['2348089782988']
@@ -28,11 +28,11 @@ global.thumb2 = "https://telegra.ph/file/c74dda31793574f84070e.jpg"
 global.mark = "https://telegra.ph/file/9b67cb5ed0ff661027366.jpg"
 global.themeemoji = '🌐'
 
-//=== Introgasi 🗿
-global.umurowner = "Privat" // Your Choice🗿
-global.kelasowner = "Privat" // Terserah🗿
-global.statusowner = "Jomblo" // Terserah
-global.lakiapacewek = "Lanang" // Terserah
+//=== Information 🗿
+global.umurowner = "Private" // Owner's age🗿
+global.kelasowner = "Private" // owner's Occupation🗿
+global.statusowner = "Single" // owner's marital status
+global.lakiapacewek = "Male" // Male or Female
 // If you don't want to fill it in, that's okay
 
 //=== Payment 😋
@@ -45,7 +45,7 @@ global.rek = "7605-0101-8289-536"
 //=== Nokos Token 😱
 global.apikey ='8c3a5b302815a138d88148fa0c5916c0595bba50' 
 
-//=== Apikey Nya 🔥
+//=== Apikey Fire 🔥
 global.lol = 'GataDios'
 global.lol = 'SGWN'
 global.rose = 'Rs-putangina'
@@ -59,52 +59,52 @@ global.APIKeys = {
 "https://api.xyroinee.xyz": "5dRkJDWvIG"
 }
 
-//=== Gak Tau 🐦
+//=== Bot Information 🐦
 global.pairingNumber = "2348089782988"
 // Your whatsapp bot number
 global.prefix = ['-_-'] 
 // Dont Change It
-global.tekspushcontact = "Izin Push" 
-// Terserah
+global.tekspushcontact = "Alex Push" 
+// push contact text
 global.typemenu = "v6"
-// Ini type menu nya
+// Type of Menu
 // v1 - v2 - v3 - v4 - v5 - v6
 global.typeallmenu = "v1"
-// Ini type allmenu nya
+// All Menu Type
 // v1 - v2 - v3 - v4 - v5 - v6
 global.game = true
-// False (Nonaktifin)
+// False (Game)
 global.groupOnly = false 
-// True (Mode grup)
+// True (Group Only Mode)
 global.privateOnly = false
-// True (Mode grup)
+// True (Private Only Mode)
 global.antispam = true 
-// False (Nonaktifin)
+// False (Anti Spam)
 global.anticall = true
-// False (Nonaktifin)
+// False (Anti Call)
 global.autoreadsw = true
-// False (Nonaktifin)
+// False (Auto Read Status)
 global.antiBot = true
-// False (Nonaktifin)
+// False (Anti Bot)
 global.pengingat = true
-// False (Nonaktifin)
+// False (Reminder)
 global.autoTyping = true
-// False (Nonaktifin)
+// False (Auto Typing)
 global.autoBio = true
-// False (Nonaktifin)
+// False (Auto Bio)
 global.autoRestart = true
-// False (Nonaktifin)
-// AutoRestart Cocok Tuk Panel Butut
+// False (Auto Restart)
+// Auto Restart Suitable For Bad Panels
 global.mess = {
- done: 'Sukses!',
- wait: 'Sedang diproses',
- admin: 'Fitur Khusus Admin grup!',
- botNotAdmin: 'Saya bukan Admin grup',
- owner: 'Fitur Khusus Owner!',
- group: 'Fitur Khusus Group!',
+ done: 'Successful!',
+ wait: 'Processing...',
+ admin: 'This Is A Special Feature Exclussive For Group Admins!',
+ botNotAdmin: 'I Need To Become Group Admin To Excute This Feature',
+ owner: 'This Feature Is Exclusive For My Owner!',
+ group: 'This Feature Works In Group Omly!',
 }
 
-// Setting Game
+// Game Settings
 global.gamewaktu = 60 // Game Time
 global.bmin = 1000 // Minimum Balance 
 global.bmax = 5000 // Maximum Balance
