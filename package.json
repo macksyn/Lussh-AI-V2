@@ -1,5 +1,5 @@
 {
-  "name": "AiBotzz-MD",
+  "name": "Lussh-AI",
   "version": "1.0.0",
   "description": "Edited By SANJAYA",
   "main": "index.js",
@@ -86,10 +86,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Alvinpin/Milkita-AI.git"
+    "url": "git+https://github.com/macksyn/Lussh-AI.git"
   },
   "bugs": {
-    "url": "https://github.com/Alvinpin/Milkita-AI/issues"
+    "url": "https://github.com/macksyn/Lussh-AI/issues"
   },
-  "homepage": "https://github.com/Alvinpin/Milkita-AI"
+  "homepage": "https://github.com/macksyn/Lussh-AI"
 }
