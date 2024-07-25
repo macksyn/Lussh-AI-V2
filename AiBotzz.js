@@ -351,9 +351,9 @@ m.reply(`${err}`)
 //==============
 function ucapan() {
         const hour_now = moment.tz('Africa/Lagos').format('HH')
-        var ucapanWaktu = 'Ohayou...'
+        var ucapanWaktu = 'Good morning...'
         if (hour_now >= '03' && hour_now <= '10') {
-          ucapanWaktu = 'Ohayou...'
+          ucapanWaktu = 'Good morning...'
         } else if (hour_now >= '10' && hour_now <= '15') {
           ucapanWaktu = 'Konnichiwa...'
         } else if (hour_now >= '15' && hour_now <= '17') {
