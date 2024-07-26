@@ -700,13 +700,13 @@ let isChat = m.mtype
 
 async function loading () {
 var nedd = [
-"*[ 🕛 ]*  A - - - - - -",
-"*[ 🕑 ]*  A I - - - - -",
-"*[ 🕓 ]*  A I B - - - -",
-"*[ 🕕 ]*  A I B O - - -",
-"*[ 🕗 ]*  A I B O T - -",
-"*[ 🕙 ]*  A I B O T Z -",
-"*[ 🕛 ]*  A I B O T Z Z"
+"*[ 🕛 ]*  L - - - - - -",
+"*[ 🕑 ]*  L U - - - - -",
+"*[ 🕓 ]*  L U S - - - -",
+"*[ 🕕 ]*  L U S S - - -",
+"*[ 🕗 ]*  L U S S H - -",
+"*[ 🕙 ]*  L U S S H   A -",
+"*[ 🕛 ]*  L U S S H   A I"
 ]
 let { key } = await Al.sendMessage(m.chat, {text: 'Loading...'}, {quoted: m})
 
@@ -731,7 +731,7 @@ let id = m.chat
 if (id in this.autosholat) {
 return false
 }
-/*let data = await (await fetch("https://api.aladhan.com/v1/timingsByCity?city=Bekasi&country=Indonesia&method=8")).json();
+/*let data = await (await fetch("https://api.aladhan.com/v1/timingsByCity?city=Lagos&country=Nigeria&method=8")).json();
 let jadwalSholat = data.data.timings;*/
 let jadwalSholat = {
 Fajr: "04:30",
