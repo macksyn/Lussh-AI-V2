@@ -145,14 +145,14 @@ const type = Object.keys(mek.message)[0];
 const botNumber = await Al.decodeJid(Al.user.id)
 const more = String.fromCharCode(8206)
 const readmore = more.repeat(4001) 
-const bulanx = moment.tz('Asia/Jakarta').format('MM/MMMM')
-const tahun = moment.tz('Asia/Jakarta').format('YYYY')
-const tanggal = moment().tz("Asia/Jakarta").format("dddd, d")
-const jam = moment(Date.now()).tz('Asia/Jakarta').locale('id').format('HH:mm:ss z')
-const jam2 = moment(Date.now()).tz('Asia/Jakarta').locale('id').format('HH:mm')
-const salam = moment(Date.now()).tz("Asia/Jakarta").locale('id').format('a')
-const timeWib = moment().tz('Asia/Jakarta').format('HH:mm:ss')
-const wibTime = moment().tz('Asia/Jakarta').format('HH:mm:ss')
+const bulanx = moment.tz('Africa/Lagos').format('MM/MMMM')
+const tahun = moment.tz('Africa/Lagos').format('YYYY')
+const tanggal = moment().tz("Africa/Lagos").format("dddd, d")
+const jam = moment(Date.now()).tz('Africa/Lagos').locale('id').format('HH:mm:ss z')
+const jam2 = moment(Date.now()).tz('Africa/Lagos').locale('id').format('HH:mm')
+const salam = moment(Date.now()).tz("Africa/Lagos").locale('id').format('a')
+const timeWib = moment().tz('Africa/Lagos').format('HH:mm:ss')
+const wibTime = moment().tz('Africa/Lagos').format('HH:mm:ss')
 const isOwner = [botNumber, ...owner].map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
 const isBot = pairingNumber.includes(m.sender)
 const isCreator = [botNumber, ...owner].map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
@@ -232,7 +232,7 @@ const isQuotedDocument = type === 'extendedTextMessage' && content.includes('doc
 const isQuotedText = type === 'extendexTextMessage' && content.includes('textMessage')
 const isQuotedText1 = type === 'extendedTextMessage' && content.includes('quotedMessage')
 const isQuotedText2 = type === 'extendedTextMessage' && content.includes('conversation')
-const time = moment(Date.now()).tz('Asia/Jakarta').locale('id').format('HH:mm:ss z')
+const time = moment(Date.now()).tz('Africa/Lagos').locale('id').format('HH:mm:ss z')
 const isQuotedTag = type === 'extendedTextMessage' && content.includes('mentionedJid')
 const isQuotedReply = type === 'extendedTextMessage' && content.includes('Message')
 const isViewOnce = (type == 'viewOnceMessageV2')
@@ -255,7 +255,7 @@ ppuser = await Al.profilePictureUrl(m.sender, 'image')
 ppuser = 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png?q=60]'
 }
 
-//Ucapan Waktu #1
+//Time Greetings #1
 if(timeWib < "23:59:00"){ var ucapanWaktu = 'sᴇʟᴀᴍᴀᴛ ᴍᴀʟᴀᴍ'}
 if(timeWib < "19:00:00"){ var ucapanWaktu = 'sᴇʟᴀᴍᴀᴛ ᴍᴀʟᴀᴍ'}
 if(timeWib < "18:00:00"){ var ucapanWaktu = 'sᴇʟᴀᴍᴀᴛ sᴏʀᴇ'}
@@ -263,32 +263,32 @@ if(timeWib < "15:00:00"){ var ucapanWaktu = 'sᴇʟᴀᴍᴀᴛ sɪᴀɴɢ'}
 if(timeWib < "11:00:00"){ var ucapanWaktu = 'sᴇʟᴀᴍᴀᴛ ᴘᴀɢɪ'}
 if(timeWib < "06:00:00"){ var ucapanWaktu = 'sᴇʟᴀᴍᴀᴛ ᴘᴀɢɪ'}     
 
-//Ucapan Waktu #2
-if(wibTime < "23:59:00"){ var sopanDong = 'Selamat Malam'}
-if(wibTime < "19:00:00"){ var sopanDong = 'Selamat Malam'}
-if(wibTime < "18:00:00"){ var sopanDong = 'Selamat Sore'}
-if(wibTime < "15:00:00"){ var sopanDong = 'Selamat Siang'}
-if(wibTime < "11:00:00"){ var sopanDong = 'Selamat Pagi'}
-if(wibTime < "06:00:00"){ var sopanDong = 'Selamat Pagi'}    
+//Time Greetings #1
+if(wibTime < "23:59:00"){ var sopanDong = 'Goodnight'}
+if(wibTime < "19:00:00"){ var sopanDong = 'Good Evening'}
+if(wibTime < "18:00:00"){ var sopanDong = 'Good Afternoon'}
+if(wibTime < "15:00:00"){ var sopanDong = 'Good Afternoon'}
+if(wibTime < "11:00:00"){ var sopanDong = 'Good Morning'}
+if(wibTime < "06:00:00"){ var sopanDong = 'Good Morning'}    
 
 //===========================================
-//Public dan Self
+//Public and Self
 if (!Al.public) {
 if (!isCreator && !m.key.fromMe) return
 }
 //===========================================
 
 const fkontak = { key: {participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: `6285600793871-1614953337@g.us` } : {}) }, message: { 'contactMessage': { 'displayName': `${pushname}`, 'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:XL;${pushname},;;;\nFN:${pushname},\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`, 'jpegThumbnail': global.thumb, thumbnail: global.thumb,sendEphemeral: true}}}
-const memek = { key: { remoteJid: 'status@broadcast', participant: '0@s.whatsapp.net' }, message: { orderMessage: { itemCount: 1000000000, status: 1, thumbnail: await Al.reSize(await getBuffer('https://telegra.ph/file/84b3a5f3286d8cf15a696.jpg'),300,150), surface: 1, message: 'ᴀɪʙᴏᴛᴢᴢ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ', orderTitle: ``, sellerJid: '0@s.whatsapp.net' } } }
-const fpay = { key: { remoteJid: '0@s.whatsapp.net', fromMe: false, id:global.namabot, participant: '0@s.whatsapp.net'}, message: { requestPaymentMessage: { currencyCodeIso4217: "IDR", amount1000: 999999999, requestFrom: '0@s.whatsapp.net', noteMessage: { extendedTextMessage: { text: 'ʙᴏᴛ ᴡʜᴀᴛsᴀᴘᴘ\nɴᴀᴍᴀ : ᴀɪʙᴏᴛᴢᴢ\nsᴛᴀᴛᴜs : ᴏɴʟɪɴᴇ'}}, expiryTimestamp: 999999999, amount: { value: 91929291929, offset: 1000, currencyCode: "IDR"}}}}
+const memek = { key: { remoteJid: 'status@broadcast', participant: '0@s.whatsapp.net' }, message: { orderMessage: { itemCount: 1000000000, status: 1, thumbnail: await Al.reSize(await getBuffer('https://telegra.ph/file/84b3a5f3286d8cf15a696.jpg'),300,150), surface: 1, message: 'ʟᴜꜱꜱʜ ᴀɪ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ', orderTitle: ``, sellerJid: '0@s.whatsapp.net' } } }
+const fpay = { key: { remoteJid: '0@s.whatsapp.net', fromMe: false, id:global.namabot, participant: '0@s.whatsapp.net'}, message: { requestPaymentMessage: { currencyCodeIso4217: "NGN", amount1000: 999999999, requestFrom: '0@s.whatsapp.net', noteMessage: { extendedTextMessage: { text: 'ᴡʜᴀᴛsᴀᴘᴘ ʙᴏᴛ\n​🇳​​🇦​​🇲​​🇪​ : ʟᴜꜱꜱʜ ᴀɪ\nsᴛᴀᴛᴜs : ᴏɴʟɪɴᴇ'}}, expiryTimestamp: 999999999, amount: { value: 91929291929, offset: 1000, currencyCode: "NGN"}}}}
 const ftroli ={key: {fromMe: false,"participant":"0@s.whatsapp.net", "remoteJid": "status@broadcast"}, "message": {orderMessage: {itemCount: 20000,status: 200, thumbnailUrl: thumb, surface: 200, message: namabot, orderTitle: namaowner, sellerJid: '0@s.whatsapp.net'}}, contextInfo: {"forwardingScore":999,"isForwarded": false},sendEphemeral: true}
 const fdoc = {key : {participant : '0@s.whatsapp.net', ...(m.chat ? { remoteJid: `status@broadcast` } : {}) },message: {documentMessage: {title: namabot,thumbnailUrl: global.thumb}}}
-const floc = {key : {participant : '0@s.whatsapp.net', ...(m.chat ? { remoteJid: `status@broadcast` } : {}) },message: {locationMessage: {name: `ᴀɪʙᴏᴛᴢᴢ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ`,thumbnailUrl: global.thumb}}}
-const floc1 = {key : {participant : '0@s.whatsapp.net', ...(m.chat ? { remoteJid: `status@broadcast` } : {}) },message: {locationMessage: {name: `${ucapanWaktu} ᴋᴀᴋ`,thumbnailUrl: ``}}}
+const floc = {key : {participant : '0@s.whatsapp.net', ...(m.chat ? { remoteJid: `status@broadcast` } : {}) },message: {locationMessage: {name: `ʟᴜꜱꜱʜ ᴀɪ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ`,thumbnailUrl: global.thumb}}}
+const floc1 = {key : {participant : '0@s.whatsapp.net', ...(m.chat ? { remoteJid: `status@broadcast` } : {}) },message: {locationMessage: {name: `${ucapanWaktu} ᴅᴜᴅᴇ`,thumbnailUrl: ``}}}
 const fvn = {key: {participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: "status@broadcast" } : {})},message: { "audioMessage": {"mimetype":"audio/ogg; codecs=opus","seconds": "240","ptt": "true"}}} 
-const ftoko = {key: {fromMe: false, participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: "status@broadcast" } : {})}, message: {productMessage: {product: {productImage:{mimetype: `image/jpeg`, thumbnailUrl: `${global.thumb}`}, title: `ᴀɪʙᴏᴛᴢᴢ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ`, description: `${namabot}`, currencyCode: `IDR`, priceAmount1000: 1000000000, retailerId: `Ghost`, productImageCount: 1}, businessOwnerJid: `0@s.whatsapp.net`}}}
-const ftoko1 = {key: {fromMe: false, participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: "status@broadcast" } : {})}, message: {productMessage: {product: {productImage:{mimetype: `image/jpeg`, thumbnailUrl: `${global.thumb}`}, title: `ᴛʜɪs ᴀʟʟ ᴍᴇɴᴜ`, description: `${namabot}`, currencyCode: `IDR`, priceAmount1000: 1000000000, retailerId: `Ghost`, productImageCount: 1}, businessOwnerJid: `0@s.whatsapp.net`}}}
-const fctg = { key: {fromMe: [], participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "0@s.whatsapp.net" } : {})}, 'message': { "interactiveMessage": { "header": { "hasMediaAttachment": [], "jpegThumbnail": `${global.thumb}`, }, "nativeFlowMessage": { "buttons": [ {"name": "review_and_pay","buttonParamsJson": "{\"currency\":\"IDR\",\"external_payment_configurations\":[{\"uri\":\"\",\"type\":\"payment_instruction\",\"payment_instruction\":\"hey ini test\"}],\"payment_configuration\":\"\",\"payment_type\":\"\",\"total_amount\":{\"value\":2500000,\"offset\":100},\"reference_id\":\"4MX98934S0D\",\"type\":\"physical-goods\",\"order\":{\"status\":\"pending\",\"description\":\"\",\"subtotal\":{\"value\":2500000,\"offset\":100},\"items\":[{\"retailer_id\":\"6348642505244872\",\"product_id\":\"6348642505244872\",\"name\":\"AiBotzz-MD\",\"amount\":{\"value\":2500000,\"offset\":100},\"quantity\":1}]}}"}]}}}}
+const ftoko = {key: {fromMe: false, participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: "status@broadcast" } : {})}, message: {productMessage: {product: {productImage:{mimetype: `image/jpeg`, thumbnailUrl: `${global.thumb}`}, title: `ʟᴜꜱꜱʜ ᴀɪ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ`, description: `${namabot}`, currencyCode: `NGN`, priceAmount1000: 1000000000, retailerId: `Ghost`, productImageCount: 1}, businessOwnerJid: `0@s.whatsapp.net`}}}
+const ftoko1 = {key: {fromMe: false, participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: "status@broadcast" } : {})}, message: {productMessage: {product: {productImage:{mimetype: `image/jpeg`, thumbnailUrl: `${global.thumb}`}, title: `ᴛʜɪs ɪꜱ ᴀʟʟ ᴍᴇɴᴜ`, description: `${namabot}`, currencyCode: `NGN`, priceAmount1000: 1000000000, retailerId: `Ghost`, productImageCount: 1}, businessOwnerJid: `0@s.whatsapp.net`}}}
+const fctg = { key: {fromMe: [], participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "0@s.whatsapp.net" } : {})}, 'message': { "interactiveMessage": { "header": { "hasMediaAttachment": [], "jpegThumbnail": `${global.thumb}`, }, "nativeFlowMessage": { "buttons": [ {"name": "review_and_pay","buttonParamsJson": "{\"currency\":\"NGN\",\"external_payment_configurations\":[{\"uri\":\"\",\"type\":\"payment_instruction\",\"payment_instruction\":\"Hey, this is still in development stage.\"}],\"payment_configuration\":\"\",\"payment_type\":\"\",\"total_amount\":{\"value\":2500000,\"offset\":100},\"reference_id\":\"4MX98934S0D\",\"type\":\"physical-goods\",\"order\":{\"status\":\"pending\",\"description\":\"\",\"subtotal\":{\"value\":2500000,\"offset\":100},\"items\":[{\"retailer_id\":\"6348642505244872\",\"product_id\":\"6348642505244872\",\"name\":\"Lusssh-AI\",\"amount\":{\"value\":2500000,\"offset\":100},\"quantity\":1}]}}"}]}}}}
 const pickRandom = (arr) => {
 return arr[Math.floor(Math.random() * arr.length)]
 }
@@ -300,7 +300,7 @@ return m.reply("Error")
 }
 //===============
 function shouldStartRecording(message) {
-// Misalnya, jika pesan berisi kata kunci "start recording", maka merekam dimulai
+// For example, if the message contains the keyword "start recording", then recording starts.
 if (message.body.toLowerCase().includes('start recording')) {
 return true;
 } else {
@@ -355,15 +355,15 @@ function ucapan() {
         if (hour_now >= '03' && hour_now <= '10') {
           ucapanWaktu = 'Good morning...'
         } else if (hour_now >= '10' && hour_now <= '15') {
-          ucapanWaktu = 'Konnichiwa...'
+          ucapanWaktu = 'Good Afternoon...'
         } else if (hour_now >= '15' && hour_now <= '17') {
-          ucapanWaktu = 'Konnichiwa...'
+          ucapanWaktu = 'Good Afternoon...'
         } else if (hour_now >= '17' && hour_now <= '18') {
-          ucapanWaktu = 'Konbanwa...'
+          ucapanWaktu = 'Good Evening...'
         } else if (hour_now >= '18' && hour_now <= '23') {
-          ucapanWaktu = 'Konbanwa...'
+          ucapanWaktu = 'Good Evening...'
         } else {
-          ucapanWaktu = 'Konbanwa'
+          ucapanWaktu = 'Good Evening'
         }	
         return ucapanWaktu
 }
@@ -374,11 +374,11 @@ function hitungMundurRamadhan() {
     const selisihHari = tanggalRamadhan.diff(tanggalHariIni, 'days');
     let pesan = '';
     if (selisihHari > 0) {
-        pesan = `Tinggal ${selisihHari} hari menuju Ramadhan.`;
+        pesan = `Only ${selisihHari} days left until Ramadhan.`;
     } else if (selisihHari === 0) {
-        pesan = `Hari ini adalah hari Ramadhan! Selamat menjalankan ibadah puasa.`;
+        pesan = `Today is Ramadan! Happy fasting.`;
     } else {
-        pesan = `Ramadhan sudah berlalu. Semoga ibadah puasamu diterima.`;
+        pesan = `Ramadan is over. May your fasting be accepted.`;
     }
     
     return pesan;
@@ -399,14 +399,14 @@ quoted: m
 
 //=========
 setInterval(function() { 
-var jamna = new Date().toLocaleTimeString('en-US', { timeZone: "Asia/Jakarta" });
+var jamna = new Date().toLocaleTimeString('en-US', { timeZone: "Africa/Lagos" });
 var hasilnes = jamna.split(':')[0] < 10 ? '0' + jamna : jamna
 if(hasilnes === '12:00:00 AM') {
 limit = []
 fs.writeFileSync('./database/limit.json', JSON.stringify(limit))
 glimit = []
 fs.writeFileSync('./database/glimit.json', JSON.stringify(glimit))
-console.log("Limit Sudah Di Reset!")
+console.log("Limit Has Been Reset!")
 }
 }, 1000);
 //========================
@@ -416,12 +416,12 @@ async function aiRep(teks) {
 forwardingScore: 999,
 isForwarded: true,
 forwardedNewsletterMessageInfo: {
-	newsletterName: "AIBOTZZ-MD | BOT WHATSAPP",
+	newsletterName: "LUSSH-AI | WHATSAPP BOT",
 		newsletterJid: "120363267733189530@newsletter",
 		},
 		externalAdReply: {  
             showAdAttribution: true,
-            title: `ᴀɪʙᴏᴛᴢᴢ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ`,
+            title: `ʟᴜꜱꜱʜ ᴀɪ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ`,
             body: ``,
             previewType: "VIDEO",
             thumbnailUrl: global.thumb, 
@@ -443,7 +443,7 @@ async function aiRep2(teks) {
 forwardingScore: 999,
 isForwarded: true,
 forwardedNewsletterMessageInfo: {
-	newsletterName: "AIBOTZZ-MD | BOT WHATSAPP",
+	newsletterName: "LUSSH-AI | WHATSAPP BOT",
 		newsletterJid: "120363267733189530@newsletter",
 		},
 		externalAdReply: {  
@@ -467,7 +467,7 @@ async function aiRep3(teks) {
         contextInfo: {
 		externalAdReply: {  
             showAdAttribution: false,
-            title: `ᴀɪʙᴏᴛᴢᴢ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ`,
+            title: `ʟᴜꜱꜱʜ ᴀɪ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ`,
             body: ``,
             previewType: "VIDEO",
             thumbnailUrl: global.mark, 
