@@ -448,7 +448,7 @@ forwardedNewsletterMessageInfo: {
 		},
 		externalAdReply: {  
             showAdAttribution: true,
-            title: `ᴀɪʙᴏᴛᴢᴢ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ`,
+            title: `ʟᴜꜱꜱʜ ᴀɪ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ`,
             body: ``,
             previewType: "VIDEO",
             thumbnailUrl: global.thumb, 
@@ -489,7 +489,7 @@ async function resize(buffer, width, height) {
 
 async function Telesticker(url) {
     return new Promise(async (resolve, reject) => {
-        if (!url.match(/(https:\/\/t.me\/addstickers\/)/gi)) return m.reply('Enther your url telegram sticker link')
+        if (!url.match(/(https:\/\/t.me\/addstickers\/)/gi)) return m.reply('Enther your telegram sticker link')
         packName = url.replace("https://t.me/addstickers/", "")
         data = await axios(`https://api.telegram.org/bot891038791:AAHWB1dQd-vi0IbH2NjKYUk-hqQ8rQuzPD4/getStickerSet?name=${encodeURIComponent(packName)}`, {method: "GET",headers: {"User-Agent": "GoogleBot"}})
         const airesult = []
@@ -498,7 +498,7 @@ async function Telesticker(url) {
             data2 = await axios(`https://api.telegram.org/bot891038791:AAHWB1dQd-vi0IbH2NjKYUk-hqQ8rQuzPD4/getFile?file_id=${fileId}`)
             result = {
             status: 200,
-            author: 'DGXeon',
+            author: 'Alex',
             url: "https://api.telegram.org/file/bot891038791:AAHWB1dQd-vi0IbH2NjKYUk-hqQ8rQuzPD4/" + data2.data.result.file_path
             }
             al.result.push(result)
@@ -508,11 +508,11 @@ async function Telesticker(url) {
 }
 
 const terdaftar = () => {
-Al.sendMessage(m.chat, {text: `Silahkan Ketik *${prefix}daftar* Agar Kamu Bisa Terdaftar Di Database ${global.namabot}\n\n*Contoh :* ${prefix}daftar nama.umur`}, {quoted: m})
+Al.sendMessage(m.chat, {text: `Please Type *${prefix}Register* Then Your Name And Your Age So You Can Be Registered In The Database ${global.namabot}\n\n*Example:* ${prefix}Register Name.Age`}, {quoted: m})
 }
 
 const terbanned = () => {
-Al.sendMessage(m.chat, {text: `Kamu dibanned jadi gak bisa pakai *${namabot}*`}, {quoted: m})
+Al.sendMessage(m.chat, {text: `🚫 Sorry, You Have Been Banned. So You Cant Use *${namabot}*`}, {quoted: m})
 }
 
 const responbot= () => {
@@ -521,28 +521,28 @@ Al.sendMessage(from, { sticker: gundul }, { quoted: m })
 }
    
 const fiturowner = () => {
-let onlyownerku = `Fitur Khusus Owner!`
+let onlyownerku = `Owner Special Features!`
 Al.sendMessage(from, { sticker: onlyownerku }, { quoted: m })
 }
 
 const onlygc = () => {
 Al.sendMessage(m.chat, {
-text: `*AKSES DI TOLAK*
+text: `❌ *ACCESS DENIED!*
 
 Author : ${namaowner}
 BOT : ${namabot}
 
-${namabot} Sedang Dalam Mode Grup. Silahkan Join Ke Grup ${namabot}`}, {quoted: m})
+${namabot} Is In *Group Only* Mode. Please Join Group ${namabot}`}, {quoted: m})
 }
 
 const onlypc = () => {
 Al.sendMessage(m.chat, {
-text: `*AKSES DI TOLAK*
+text: `❌ *ACCESS DENIED!
 
 Author : ${namaowner}
 BOT : ${namabot}
 
-${namabot} Sedang Dalam Mode Private. Silahkan Gunakan Diprivate Chat`}, {quoted: m})
+${namabot} Is In *Private Mode*. Please Use Private Chat`}, {quoted: m})
 }
 
 const isRegistered = checkRegisteredUser(m.sender)
@@ -573,7 +573,7 @@ let hari = Math.floor(distance / (1000 * 60 * 60 * 24));
 let jam = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
 let menit = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
 let detik = Math.floor((distance % (1000 * 60)) / 1000);
-return hari + ' hari ' + jam + ' jam ' + menit + ' menit ' + detik + ' detik '
+return hari + ' Day ' + jam + ' Hour ' + menit + ' Minute ' + detik + ' Seconds '
 }
 //========================
 function happymod(query) {
@@ -606,7 +606,7 @@ let getId2 = afk.getAfkId(ment, _afk)
 let getReason2 = afk.getAfkReason(getId2, _afk)
 let getTimee = Date.now() - afk.getAfkTime(getId2, _afk)
 let heheh2 = ms(getTimee)
-m.reply(`Jangan ditag, dia sedang AFK\n\n*Alasan :* ${getReason2}\n*Sejak :* ${heheh2.hours} Jam, ${heheh2.minutes} Menit, ${heheh2.seconds} Detik yang lalu\n`)
+m.reply(`Please dont tag him, he is Away From Keyboard\n\n*Reasons :* ${getReason2}\n*Since:* ${heheh2.hours} Hours, ${heheh2.minutes} Minutes, ${heheh2.seconds} Seconds Ago!\n`)
 }
 }
 if (afk.checkAfkUser(m.sender, _afk)) {
@@ -616,7 +616,7 @@ let getTime = Date.now() - afk.getAfkTime(getId, _afk)
 let heheh = ms(getTime)
 _afk.splice(afk.getAfkPosition(m.sender, _afk), 1)
 fs.writeFileSync('./database/afk.json', JSON.stringify(_afk))
-Al.sendTextWithMentions(m.chat, `@${m.sender.split('@')[0]} telah kembali dari AFK\n\n*Alasan :* ${getReason}\n*Selama :* ${heheh.hours} Jam ${heheh.minutes} Menit ${heheh.seconds} Detik\n`, m)
+Al.sendTextWithMentions(m.chat, `@${m.sender.split('@')[0]} has returned from AFK\n\n*Reasons:* ${getReason}\n*Since:* ${heheh.hours} Hours, ${heheh.minutes} Minutes, ${heheh.seconds} Seconds\n`, m)
 }
 }
 //======
