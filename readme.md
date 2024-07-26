@@ -1,22 +1,22 @@
 <p align="center">
     <img src="https://telegra.ph/file/0aa23c7f060e0919e52cf.jpg" width="100%" style="margin-left: auto;margin-right: auto;display: block;">
     </p>
-    <h1 align="center">Vin - MD</h1>
+    <h1 align="center">Lussh - AI</h1>
 
-## BACA DULU SEBELUM PAKAI ##
-- Ubah Informasi di Config.js
+## READ FIRST BEFORE USE ##
+- Change Information in Config.js
 - Support Panel, Termux & replit
-- Pastiakan Kamu Sudah Subrek Chanel Gua
-- Harap Manuruh Credit Jika Ingin Recode Jika Tidak Di Pastikan Tidak Ada Update Lagi Ke Versi Selanjutnya.
+- Make sure you have subed to my youtube channel
+- Please give credit if you want to recode. Or else, make sure there is no more update to the next version.
 
 ### Sedikit Tentang Bot
 - ✔️ | **Simple** 
 - ✔️ | **No Button** 
 - ✔️ | **Multi Device** 
-- ✔️ | **Work All Fitur**
+- ✔️ | **All Features Are Working**
 - ✔️ | **No Apikey**
 - ---------
-### Fitur Yang Dimiliki
+### Features Available
 - ✔️ | Tools 
 - ✔️ | Remini
 - ✔️ | Quotes
@@ -26,9 +26,9 @@
 - ✔️ | And Others
 - ✔️ | Bug Warcall
 - ✔️ | Create Panel Pterodactyl
-- ✔️ | Full Fitur AI
-- ✔️ | Setmenu (v1,v2,v3,v4)
-- ✔️ | Dan Masih Banyak Lagi
+- ✔️ | Full AI Features
+- ✔️ | Choose Between Menu (v1,v2,v3,v4)
+- ✔️ | And Many More
 - ---------
 
 
@@ -38,7 +38,7 @@
 
 
 VnShoop | @callmevinz
-AiBotzzSH | @SanjayaAds
+Lussh AI | @SanjayaAds
 WhatsApp Alvin : 083150418588
 WhatsApp Jay : 089654057716
 
