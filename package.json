@@ -1,13 +1,13 @@
 {
   "name": "Lussh-AI",
   "version": "1.0.0",
-  "description": "Edited By SANJAYA",
+  "description": "Made By Alex Macksyn",
   "main": "index.js",
   "type": "commonjs",
   "scripts": {
     "start": "node index.js"
   },
-  "author": "Sanjaya",
+  "author": "Alex Macksyn",
   "license": "MIT",
   "dependencies": {
     "@adiwajshing/baileys": "npm:@whiskeysockets/baileys",
