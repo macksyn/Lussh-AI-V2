@@ -75,7 +75,7 @@ global.getTime = (format, date) => {
 if (date) {
 return moment(date).locale('id').format(format)
 } else {
-return moment.tz('Asia/Jakarta').locale('id').format(format)
+return moment.tz('Africa/Lagos').locale('id').format(format)
 }
 }
 
@@ -93,8 +93,8 @@ second: 'numeric'
 }
 
 global.tanggal = (numer) => {
-myMonths = ["Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","November","Desember"];
-myDays = ['Minggu','Senin','Selasa','Rabu','Kamis','Jum’at','Sabtu']; 
+myMonths = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+myDays = ['Sunday','Monday','Tuesday','Wednessday','Thursday','Friday','Saturday']; 
 var tgl = new Date(numer);
 var day = tgl.getDate()
 bulan = tgl.getMonth()
@@ -102,7 +102,7 @@ var thisDay = tgl.getDay(),
 thisDay = myDays[thisDay];
 var yy = tgl.getYear()
 var year = (yy < 1000) ? yy + 1900 : yy; 
-const time = moment.tz('Asia/Jakarta').format('DD/MM HH:mm:ss')
+const time = moment.tz('Africa/Lagos').format('DD/MM HH:mm:ss')
 let d = new Date
 let locale = 'id'
 let gmt = new Date(0).getTime() - new Date('1 January 1970').getTime()
@@ -247,7 +247,7 @@ return a.jid
 }
 
 global.h2k = (number) => {
-var SI_POSTFIXES = ["", " Ribu", " Juta", " Miliar", " Triliun", " P", " E"]
+var SI_POSTFIXES = ["", " Thousand", " Million", " Billion", " Trilion", " P", " E"]
 //var SI_POSTFIXES = ["", " K", " M", " G", " T", " P", " E"]
 var tier = Math.log10(Math.abs(number)) / 3 | 0
 if(tier == 0) return number
