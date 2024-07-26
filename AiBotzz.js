@@ -747,14 +747,14 @@ Firstthird: "21:54",
 Lastthird: "01:55"
 }
 const date = new Date((new Date).toLocaleString("en-US", {
-timeZone: "Asia/Jakarta"
+timeZone: "Africa/Lagos"
 }));
 const hours = date.getHours();
 const minutes = date.getMinutes();
 const timeNow = `${hours.toString().padStart(2, "0")}:${minutes.toString().padStart(2, "0")}`;
 for (const [sholat, waktu] of Object.entries(jadwalSholat)) {
 if (timeNow === waktu) {
-let caption = `Hai @${who.split`@`[0]},\nWaktu *${sholat}* Telah Tiba, Ambilah Air Wudhu dan Segeralah Sholat\n\n*${waktu}*\n_Untuk wilayah *Jakarta* dan sekitarnya._`
+let caption = `Hi @${who.split`@`[0]},\nIts Now Time For *${sholat}* Go And Do Ablution And Pray ASAP\n\n*${waktu}*\n_For Nigeria As Well_`
 this.autosholat[id] = [
 this.m.reply(m.chat, caption, null, {
 contextInfo: {
