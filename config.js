@@ -28,6 +28,9 @@ global.thumb2 = "https://telegra.ph/file/c74dda31793574f84070e.jpg"
 global.mark = "https://telegra.ph/file/9b67cb5ed0ff661027366.jpg"
 global.themeemoji = '🌐'
 
+global.api_smd = "https://api-smd-1.vercel.app";
+global.scan = "https://secret-garden-43998-4daad95d4561.herokuapp.com/";
+
 //=== Information 🗿
 global.umurowner = "Private" // Owner's age🗿
 global.kelasowner = "Private" // owner's Occupation🗿
