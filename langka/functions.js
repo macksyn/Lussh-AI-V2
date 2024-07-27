@@ -86,7 +86,7 @@ weekday: 'long',
 day: 'numeric',
 month: 'long',
 year: 'numeric',
-hour12: 'true',
+hour12: true,
 minute: 'numeric',
 second: 'numeric'
 })
