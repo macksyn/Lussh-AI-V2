@@ -73,20 +73,20 @@ return url.match(new RegExp(/https?:\/\/(www\.)?[-a-zA-Z0-9@:%._+~#=]{1,256}\.[a
 
 global.getTime = (format, date) => {
 if (date) {
-return moment(date).locale('id').format(format)
+return moment(date).locale('en').format(format)
 } else {
-return moment.tz('Africa/Lagos').locale('id').format(format)
+return moment.tz('Africa/Lagos').locale('en').format(format)
 }
 }
 
-global.formatDate = (n, locale = 'id') => {
+global.formatDate = (n, locale = 'en') => {
 let d = new Date(n)
 return d.toLocaleDateString(locale, {
 weekday: 'long',
 day: 'numeric',
 month: 'long',
 year: 'numeric',
-hour: 'numeric',
+hour12: 'numeric',
 minute: 'numeric',
 second: 'numeric'
 })
@@ -104,7 +104,7 @@ var yy = tgl.getYear()
 var year = (yy < 1000) ? yy + 1900 : yy; 
 const time = moment.tz('Africa/Lagos').format('DD/MM HH:mm:ss')
 let d = new Date
-let locale = 'id'
+let locale = 'en'
 let gmt = new Date(0).getTime() - new Date('1 January 1970').getTime()
 let weton = ['Pahing', 'Pon','Wage','Kliwon','Legi'][Math.floor(((d * 1) + gmt) / 84600000) % 5]
 return `${thisDay}, ${day} - ${myMonths[bulan]} - ${year}`
@@ -218,10 +218,10 @@ var d = Math.floor(seconds / (3600 * 24));
 var h = Math.floor(seconds % (3600 * 24) / 3600);
 var m = Math.floor(seconds % 3600 / 60);
 var s = Math.floor(seconds % 60);
-var dDisplay = d > 0 ? d + (d == 1 ? ' hari, ' : ' hari, ') : '';
-var hDisplay = h > 0 ? h + (h == 1 ? ' jam, ' : ' jam, ') : '';
-var mDisplay = m > 0 ? m + (m == 1 ? ' menit, ' : ' menit, ') : '';
-var sDisplay = s > 0 ? s + (s == 1 ? ' detik' : ' detik') : '';
+var dDisplay = d > 0 ? d + (d == 1 ? ' days, ' : ' days, ') : '';
+var hDisplay = h > 0 ? h + (h == 1 ? ' hour, ' : ' hours, ') : '';
+var mDisplay = m > 0 ? m + (m == 1 ? ' minute, ' : ' minute, ') : '';
+var sDisplay = s > 0 ? s + (s == 1 ? ' seconds' : ' seconds') : '';
 return dDisplay + hDisplay + mDisplay + sDisplay;
 }
 
