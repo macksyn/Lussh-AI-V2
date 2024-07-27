@@ -8,7 +8,7 @@ const axios = require('axios');
 // Original : @macksyn
 
 //=== Edit Here 🔥
-global.namabot = "LUSSH-AI"
+global.namabot = "Lussh-AI"
 global.namaowner = "Alex Macksyn"
 global.packname = "Sticker by"
 global.creator = "Alex Macksyn"
