@@ -1,8 +1,15 @@
-FROM quay.io/suhailtechinfo/suhail-v2
+FROM quay.io/sampandey001/secktor
+
 RUN git clone https://github.com/macksyn/Lussh-AI /root/macksyn
-RUN rm -rf /root/macksyn/.git
+
+# Clear npm cache and remove node_modules directories
+RUN npm cache clean --force
+RUN rm -rf /root/macksyn/node_modules
+
+# Install dependencies
 WORKDIR /root/macksyn
 RUN npm install || yarn install
-EXPOSE 8000
-CMD ["npm","start" ] 
 
+# Add additional Steps To Run...
+EXPOSE 3000
+CMD ["npm","start" ]
