@@ -1,7 +1,8 @@
-FROM quay.io/teamolduser/docker
-
-COPY . /root/macksyn
+FROM quay.io/suhailtechinfo/suhail-v2
+RUN git clone https://github.com/macksyn/Lussh-AI /root/macksyn
+RUN rm -rf /root/macksyn/.git
 WORKDIR /root/macksyn
-RUN yarn install --network-concurrency 1
+RUN npm install || yarn install
 EXPOSE 8000
-CMD ["yarn", "start"]
+CMD ["npm","start" ] 
+
