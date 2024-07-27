@@ -5,10 +5,13 @@
   "main": "index.js",
   "type": "commonjs",
   "scripts": {
-      "run": "pm2 start . --deep-monitoring --attach --name Suhail || node .",
-            "suhail": "pm2 start . --deep-monitoring --attach --name Suhail || node .",
-            "start": "pm2 start . --attach --name Suhail",
-            "stop": "pm2 stop Suhail",
+      "run": "pm2 start . --deep-monitoring --attach --name macksyn || node .",
+      "AiBotzz": "pm2 start . --deep-monitoring --attach --name macksyn || node .",
+      "start": "pm2 start . --attach --name macksyn",
+      "stop": "pm2 stop macksyn",
+      "heroku-postbuild": "git clone https://github.com/macksyn/Lussh-AI temp && mv temp/.git .git && rm -rf temp && npx puppeteer@latest install  --y",
+      "fis-heroku-postbuild": "git clone https://github.com/macksyn/Lussh-AI.git temp1 && rsync -av temp1/* ./ && rsync -av temp1/.* ./ && rm -rf temp1 && npm i && npx puppeteer@latest install",
+      "postinstall": "npx puppeteer@latest install --y"
   },
   "author": "Alex Macksyn",
   "license": "MIT",
