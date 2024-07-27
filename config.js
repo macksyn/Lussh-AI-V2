@@ -88,7 +88,7 @@ global.antiBot = true
 // False (Anti Bot)
 global.pengingat = true
 // False (Reminder)
-global.autoTyping = true
+global.autoTyping = false
 // False (Auto Typing)
 global.autoBio = true
 // False (Auto Bio)
