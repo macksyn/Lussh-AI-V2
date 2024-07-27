@@ -1537,19 +1537,19 @@ cron.schedule('0 49 11 * * *', async () => {
 let text = '*[ System Notice ]* Waktu Dzuhur Tiba, Segeralah Sholat...'
 sleep(6000)
 Al.sendMessage(`${global.idgc}`, {text: text, mentions: participants.map(a => a.id)})
-}, { scheduled: true, timezone: 'Asia/Jakarta' })
+}, { scheduled: true, timezone: 'Africa/Lagos' })
 
 cron.schedule('0 11 15 * * *', async () => {
 let text = '*[ System Notice ]* Waktu Ashar Tiba, Segeralah Sholat...'
 sleep(6000)
 Al.sendMessage(`${global.idgc}`, {text: text, mentions: participants.map(a => a.id)})
-}, { scheduled: true, timezone: 'Asia/Jakarta' })
+}, { scheduled: true, timezone: 'Africa/Lagos' })
 
 cron.schedule('0 46 17 * * *', async () => {
 let text = '*[ System Notice ]* Waktu Magrib Tiba, Segeralah Sholat...'
 sleep(6000)
 Al.sendMessage(`${global.idgc}`, {text: text, mentions: participants.map(a => a.id)})
-}, { scheduled: true, timezone: 'Asia/Jakarta' })
+}, { scheduled: true, timezone: 'Africa/Lagos' })
 
 cron.schedule('0 57 18 * * *', async () => {
 let text = '*[ System Notice ]* Waktu Isya Tiba, Segeralah Sholat...'
@@ -1771,7 +1771,7 @@ case 'owner':
                 externalAdReply: {
                   showAdAttribution: true,
                   renderLargerThumbnail: false,
-                  title: `THIS MY OWNER`,
+                  title: `THIS IS MY OWNER`,
                   containsAutoReply: true,
                   mediaType: 1,
                   thumbnail: ppnyauser,
@@ -1785,26 +1785,26 @@ case 'owner':
         }
         break;
 //========================
-case 'menampilkan menu':
+case 'show menu':
 case 'menu': {
 if (!isRegistered) return terdaftar()
 if (isBan) return terbanned()
 let gif = `${global.gifin}` 
 let aAl = `
-Hai *${pushname}* 👋
-${sopanDong} Kak 😁
+Hi *${pushname}* 👋
+${sopanDong} Bro 😁
 
 ┈───────────────────────᳃
-            ཊཏ    *I N F O  B O T*    ཊཏ
+            ཊཏ    *B O T  I N F O*    ཊཏ
 ┈───────────────────────᳃
-     ⊰•  *ɴᴀᴍᴀʙᴏᴛ :* ${namabot}
+     ⊰•  *ʙᴏᴛ ɴᴀᴍᴇ :* ${namabot}
      ⊰•  *ᴄʀᴇᴀᴛᴏʀ :* ${namaowner}
      ⊰•  *ʀᴜɴᴛɪᴍᴇ :* ${runtime(process.uptime())}
      ⊰•  *ᴅᴀᴛᴇ :* ${tanggal}
      ⊰•  *ᴛɪᴍᴇ :* ${jam}
     
 ┈───────────────────────᳃
-            ཊཏ    *M E N U B O T*    ཊཏ
+            ཊཏ    *B O T  M E N U*    ཊཏ
 ┈───────────────────────᳃
      ィ•  ᴀʟʟᴍᴇɴᴜ
      ィ•  ᴍᴀɪɴᴍᴇɴᴜ
@@ -1815,13 +1815,13 @@ ${sopanDong} Kak 😁
      ィ•  sᴏᴜɴᴅᴍᴇɴᴜ
      ィ•  ᴍᴀᴋᴇʀᴍᴇɴᴜ
 ┈───────────────────────᳃
-             ཊཏ    *A I B O T Z Z*    ཊཏ
+             ཊཏ    *L U S S H  A I*    ཊཏ
 ┈───────────────────────᳃
 
-ⓘ Please Don't Call & Spam Me`
+ⓘ Please Don't Misuse & Abuse Bot`
 if (typemenu === 'v1') {    
 await Al.sendMessage(m.chat, {document: fs.readFileSync("./package.json"),
-            fileName: `ᴀɪʙᴏᴛᴢᴢ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ`,
+            fileName: `ʟᴜꜱꜱʜ ᴀɪ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ`,
             mimetype: "application/pdf",
             fileLength: 99999999999999999,
             pageCount: 500, caption: aAl,
@@ -1833,8 +1833,8 @@ forwardedNewsletterMessageInfo: {
 		newsletterJid: "120363267733189530@newsletter",
 		},
 		externalAdReply: {  
-title: `ᴀɪʙᴏᴛᴢᴢ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ`, 
-body: `${ucapanWaktu} ᴋᴀᴋ`,
+title: `ʟᴜꜱꜱʜ ᴀɪ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ`, 
+body: `${ucapanWaktu} ʙʀᴏ`,
 thumbnailUrl: global.thumb,
 sourceUrl: global.myweb, 
 mediaType: 1,
@@ -1850,11 +1850,11 @@ contextInfo: {
 forwardingScore: 999,
 isForwarded: false,
 forwardedNewsletterMessageInfo: {
-	newsletterName: "AIBOTZZ-MD | BOT WHATSAPP",
+	newsletterName: "LUSSH-AI | WHATSAPP BOT",
 		newsletterJid: "120363267733189530@newsletter",
 		},
 		externalAdReply: {  
-title: `© AiBotzz-MD`, 
+title: `© Lussh-AI`, 
 body: '',
 thumbnailUrl: global.thumb,
 sourceUrl: global.sgc, 
@@ -1872,7 +1872,7 @@ renderLargerThumbnail: true
 	} else if (typemenu === 'v4') {
 	await Al.relayMessage(m.chat,  {
      requestPaymentMessage: {
-           currencyCodeIso4217: 'IDR',
+           currencyCodeIso4217: 'NGN',
                  amount1000: 999999000,
                        requestFrom: m.sender,
                              noteMessage: {
@@ -1895,7 +1895,7 @@ let msg = generateWAMessageFromContent(from, {
             text: ''
           }),
           footer: proto.Message.InteractiveMessage.Footer.create({
-            text: 'AiBotzz Multi Device'
+            text: 'Lussh-AI Multi Device'
           }),
           header: proto.Message.InteractiveMessage.Header.create({
             title: aAl,
@@ -1906,15 +1906,15 @@ let msg = generateWAMessageFromContent(from, {
             buttons: [
               {
                 "name": "single_select",
-                "buttonParamsJson": "{\"title\":\"VIEW RULES\",\"sections\":[{\"title\":\"RULES AIBOTZZ MULTI DEVICE\",\"highlight_label\":\"Rules Nya\",\"rows\":[{\"header\":\"📓 Dilarang Spam\",\"title\":\"• Agar Tidak Di Banned\",\"description\":\"Dan Tidak Di Blokir\",\"id\":\".play\"},{\"header\":\"📘 Dilarang Menelpon\",\"title\":\"• Biasa Nya Sering Terjadi\",\"description\":\"Error Jika Di Telpon\",\"id\":\".play\"},{\"header\":\"📘 Dilarang Menculik\",\"title\":\"• Lu Kalo Nyulik Gua\",\"description\":\"Siap Siap Kena Banned\",\"id\":\".play\"}]}]}"
+                "buttonParamsJson": "{\"title\":\"VIEW RULES\",\"sections\":[{\"title\":\"LUSSH-AI MULTI DEVICE RULES\",\"highlight_label\":\"The Rules\",\"rows\":[{\"header\":\"📓 Spam Is Prohibited\",\"title\":\"• To Avoid Being Banned\",\"description\":\"And Blocked\",\"id\":\".play\"},{\"header\":\"📘 No Calls Allowed\",\"title\":\"• It Usually Happens Often\",\"description\":\"Error If Called\",\"id\":\".play\"},{\"header\":\"📘 Hacking IS Prohibited\",\"title\":\"• If You Hack This Number\",\"description\":\"Get Ready to Get Banned\",\"id\":\".play\"}]}]}"
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"CHAT OWNER\",\"url\":\"https://wa.me/+6289654057716?text=Halo+Bang\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"CHAT OWNER\",\"url\":\"https://wa.me/+2348089782988?text=Hello+Bro\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
                 "name": "quick_reply",
-                "buttonParamsJson": `{"display_text":"MENAMPILKAN ALLMENU","id":"${prefix}allmenu"}`
+                "buttonParamsJson": `{"display_text":"DISPLAYING FULL MENU","id":"${prefix}allmenu"}`
               }
            ],
           })
@@ -1939,9 +1939,9 @@ const uploadFile = { upload: Al.waUploadToServer };
         const product = {
           productImage: imageMessage.imageMessage,
           productId: "375984352103936",
-          title: `Hai *${pushname}* 👋`,
-          description: "Mau Nyari Apa Bang?",
-          currencyCode: "IDR",
+          title: `Hi *${pushname}* 👋`,
+          description: "What Are You Looking For, Bro?",
+          currencyCode: "NGN",
           priceAmount1000: "150000000",
           productImageCount: 1,
         };
@@ -1960,36 +1960,36 @@ const uploadFile = { upload: Al.waUploadToServer };
         await Al.relayMessage(from, response.message, {
           messageId: response.key.id,
         });
-        await Al.sendMessage(m.chat, {video: {url: gif}, gifPlayback: true, caption: `┈───────────────────────᳃\n            ཊཏ    *I N F O  B O T*    ཊཏ\n┈───────────────────────᳃\n     ⊰•  *ɴᴀᴍᴀʙᴏᴛ :* ${namabot}\n     ⊰•  *ᴄʀᴇᴀᴛᴏʀ :* ${namaowner}\n     ⊰•  *ʀᴜɴᴛɪᴍᴇ :* ${runtime(process.uptime())}\n     ⊰•  *ᴅᴀᴛᴇ :* ${tanggal}\n     ⊰•  *ᴛɪᴍᴇ :* ${jam}\n\n┈───────────────────────᳃\n            ཊཏ    *M E N U B O T*    ཊཏ\n┈───────────────────────᳃\n     ィ•  ᴀʟʟᴍᴇɴᴜ\n     ィ•  ᴍᴀɪɴᴍᴇɴᴜ\n     ィ•  ɢʀᴏᴜᴘᴍᴇɴᴜ\n     ィ•  sᴛᴏʀᴇᴍᴇɴᴜ\n     ィ•  ᴏᴡɴᴇʀᴍᴇɴᴜ\n     ィ•  ᴘʀɪᴠᴀᴛᴇᴍᴇɴᴜ\n     ィ•  sᴏᴜɴᴅᴍᴇɴᴜ\n     ィ•  ᴍᴀᴋᴇʀᴍᴇɴᴜ\n┈───────────────────────᳃\n             ཊཏ    *A I B O T Z Z*    ཊཏ\n┈───────────────────────᳃\n\nⓘ Please Don't Call & Spam Me`}, { quoted: fkontak})
+        await Al.sendMessage(m.chat, {video: {url: gif}, gifPlayback: true, caption: `┈───────────────────────᳃\n            ཊཏ    *B O T  I N F O *    ཊཏ\n┈───────────────────────᳃\n     ⊰•  *ʙᴏᴛ ɴᴀᴍᴇ :* ${namabot}\n     ⊰•  *ᴄʀᴇᴀᴛᴏʀ :* ${namaowner}\n     ⊰•  *ʀᴜɴᴛɪᴍᴇ :* ${runtime(process.uptime())}\n     ⊰•  *ᴅᴀᴛᴇ :* ${tanggal}\n     ⊰•  *ᴛɪᴍᴇ :* ${jam}\n\n┈───────────────────────᳃\n            ཊཏ    *B O T  M E N U*    ཊཏ\n┈───────────────────────᳃\n     ィ•  ᴀʟʟᴍᴇɴᴜ\n     ィ•  ᴍᴀɪɴᴍᴇɴᴜ\n     ィ•  ɢʀᴏᴜᴘᴍᴇɴᴜ\n     ィ•  sᴛᴏʀᴇᴍᴇɴᴜ\n     ィ•  ᴏᴡɴᴇʀᴍᴇɴᴜ\n     ィ•  ᴘʀɪᴠᴀᴛᴇᴍᴇɴᴜ\n     ィ•  sᴏᴜɴᴅᴍᴇɴᴜ\n     ィ•  ᴍᴀᴋᴇʀᴍᴇɴᴜ\n┈───────────────────────᳃\n             ཊཏ    *L U S S H  A I*    ཊཏ\n┈───────────────────────᳃\n\nⓘ Please Don't Abuse & Misuse Bot`}, { quoted: fkontak})
   }
 }
 break
 //========================
 case 'addlimit': {
-if (!isCreator) return m.reply('Fitur Khusus Owner!')
-if (!text) return m.reply(`Gunakan dengan cara :\n${prefix+command} *@Tag Angka*\n\n*Contoh :*\n${prefix+command} @${m.sender.split("@")[0]} 100`)
+if (!isCreator) return m.reply('Owner Special Features!')
+if (!text) return m.reply(`Use it in the following way :\n${prefix+command} *@Tag Number*\n\n*Example:*\n${prefix+command} @${m.sender.split("@")[0]} 100`)
 let users = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : args[0].replace(/[^0-9]/g, '')+'@s.whatsapp.net'
-if (!m.mentionedJid[0] && !m.quoted && !text) return m.reply(`Tag/Reply target yang mau di ${command}`)
-if (!args[1]) return m.reply(`Masukkan nominal nya!\n\n*Contoh :*\n${prefix+command} @${m.sender.split("@")[0]} 100`)
-if (isNaN(args[1])) return m.reply(`Nominal harus berupa angka!\n\n*Contoh :*\n${prefix+command} @${m.sender.split("@")[0]} 100`)
-if (args[1] === 'infinity') return m.reply(`Wkwk gua gak bisa diTipu`)
-if (args[1].includes("-")) return m.reply(`Jangan menggunakan -\n\n*Contoh :*\n${prefix+command} @${m.sender.split("@")[0]} 100`)
+if (!m.mentionedJid[0] && !m.quoted && !text) return m.reply(`Tag/Reply the person you want to ${command}`)
+if (!args[1]) return m.reply(`Enter the amount!\n\n*Example:*\n${prefix+command} @${m.sender.split("@")[0]} 100`)
+if (isNaN(args[1])) return m.reply(`The nominal must be a number!\n\n*Example:*\n${prefix+command} @${m.sender.split("@")[0]} 100`)
+if (args[1] === 'infinity') return m.reply(`Haha, I cant be fooled 😂`)
+if (args[1].includes("-")) return m.reply(`Do not use -\n\n*Example:*\n${prefix+command} @${m.sender.split("@")[0]} 100`)
 giveLimit(users, parseInt(args[1]), limit)
-Al.sendTextWithMentions(m.chat, `*SUKSES ADDLIMIT*\n\n*Kepada :* @${users.split("@")[0]}\n*Sebesar :* ${args[1]} Limit\n\nSilahkan ketik *.limit*\nTo checks Limit`, floc)
+Al.sendTextWithMentions(m.chat, `✅ *LIMIT ADDED SUCCESSFULLY*\n\n*TO:* @${users.split("@")[0]}\n*Amounting To :* ${args[1]} Limit\n\nPlease Type *.limit*\nTo checks Limits`, floc)
 }
 break
 case 'block': 
 case 'blok': {
-if (!isCreator) return m.reply('Fitur Khusus Owner!') 
-if (!text) return m.reply(`Masukkan nomor target!`)
+if (!isCreator) return m.reply('Owner Special Features!') 
+if (!text) return m.reply(`Enter Target Number!`)
 let blok = q.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
 Al.updateBlockStatus(blok, 'block')
-m.reply(`Sukses block @${blok.split('@')[0]}`)
+m.reply(`✅ Blocked @${blok.split('@')[0]} Successfully!`)
 }
 break
 //========================
-case 'menampilkan allmenu':
-case 'menuall':
+case 'show all menu':
+case 'all menu':
 case 'allmenu':{
 if (!isRegistered) return terdaftar()
 if (isBan) return terbanned()
@@ -2002,13 +2002,13 @@ let capt = `
 ⌬︱ *ɴᴀᴍᴇ* : ${pushname}
 ⌬︱ *ꜱᴛᴀᴛᴜꜱ* : ${isCreator ? 'Owner' : 'User'}
 ⌬︱ *ʟɪᴍɪᴛ* : ${isCreator ? '∞/∞' : isPremium ? '∞/∞' : getLimit(m.sender, limitCount, limit)}
-⌬︱ *ᴘʀᴇᴍɪᴜᴍ* : ${isPremium ? 'Iya' : `Gak`}
+⌬︱ *ᴘʀᴇᴍɪᴜᴍ* : ${isPremium ? 'Yes' : `No`}
 ╰──────────────────────┈
 
        *❏  INFO  DATE*
 ╭──────────────────────┈
 ⌬︱ *ᴛɪᴍᴇ* : ${jam}
-⌬︱ *ʙᴜʟᴀɴ :* ${bulanx}
+⌬︱ *ᴍᴏɴᴛʜ* : ${bulanx}
 ⌬︱ *ᴅᴀᴛᴇ* : ${tanggal}
 ⌬︱ *ʀᴜɴᴛɪᴍᴇ* : ${runtime(process.uptime())}
 ╰──────────────────────┈
@@ -2018,11 +2018,11 @@ let capt = `
 ⌬︱ *ᴘʟᴀᴛғᴏʀᴍ* : Linux x64
 ⌬︱ *ʟɪʙʀᴀʀʏ* : Nothing
 ⌬︱ *ᴘʀᴇғɪx* : Multi Prefix
-⌬︱ *ᴠᴇʀꜱɪ* : 1.1 Fix
+⌬︱ *ᴠᴇʀꜱɪᴏɴ* : 1.1 Fixed
 ╰──────────────────────┈
 
   *ɴ ᴏ ᴛ ᴇ :*
-  • ʙᴇʀɪ ᴊᴇᴅᴀ ʏᴀʜ ᴋᴀᴋ ッ
+  • ɢɪᴠᴇ ɪᴛ ᴀ ʙʀᴇᴀᴋ ʙʀᴏ ッ
 `+readmore+`
 ┈───────────────────────•∘
             ཊཏ    *M E N U B O T*    ཊཏ
@@ -3177,9 +3177,9 @@ const uploadFile = { upload: Al.waUploadToServer };
         const product = {
           productImage: imageMessage.imageMessage,
           productId: "375984352103936",
-          title: `Hai *${pushname}* 👋`,
-          description: "Mau Nyari Apa Bang?",
-          currencyCode: "IDR",
+          title: `Hi *${pushname}* 👋`,
+          description: "What Are You Looking For, Bro?",
+          currencyCode: "NGN",
           priceAmount1000: "150000000",
           productImageCount: 1,
         };
