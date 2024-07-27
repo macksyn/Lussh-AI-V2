@@ -5465,10 +5465,10 @@ case 'tes':
 case 'test':{
 if (!isRegistered) return terdaftar()
 if (isBan) return terbanned()
-var teks = `${namabot} Aktif kak\nSilahkan ketikan *.menu all*`
+var teks = `${namabot} is Active! 📡\nPlease Type *menu all* To See All Featurers.`
  Al.relayMessage(m.chat,  {
      requestPaymentMessage: {
-           currencyCodeIso4217: 'IDR',
+           currencyCodeIso4217: 'NGN',
                  amount1000: 150000000,
                        requestFrom: m.sender,
                              noteMessage: {
