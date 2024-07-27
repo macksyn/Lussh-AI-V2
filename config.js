@@ -96,8 +96,8 @@ global.autoRestart = true
 // False (Auto Restart)
 // Auto Restart Suitable For Bad Panels
 global.mess = {
- done: 'Successful!',
- wait: 'Processing...',
+ done: '✅ Successful!',
+ wait: '⏳ Processing...',
  admin: 'This Is A Special Feature Exclussive For Group Admins!',
  botNotAdmin: 'I Need To Become Group Admin To Excute This Feature',
  owner: 'This Feature Is Exclusive For My Owner!',
