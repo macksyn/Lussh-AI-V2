@@ -1555,27 +1555,27 @@ cron.schedule('0 57 18 * * *', async () => {
 let text = '*[ System Notice ]* Waktu Isya Tiba, Segeralah Sholat...'
 sleep(6000)
 Al.sendMessage(`${global.idgc}`, {text: text, mentions: participants.map(a => a.id)})
-}, { scheduled: true, timezone: 'Asia/Jakarta' })
+}, { scheduled: true, timezone: 'Africa/Lagos' })
 
 cron.schedule("0 33 4 * * *", () => {
 let text = '*[ System Notice ]* Waktu Shubuh Tiba, Segeralah Sholat...'
 sleep(6000)
 Al.sendMessage(`${global.idgc}`, { text : text, mentions: participants.map(a => a.id)})
-}, {scheduled: true, timezone: "Asia/Jakarta"})
+}, {scheduled: true, timezone: "Africa/Lagos"})
 
 cron.schedule('0 0 23 * * *', async () => {
 let text = '*[ System Notice ]* Waktu Obrolan Terbatas, Grup Akan Ditutup!'
 Al.sendMessage(`${global.idgc}`, {text: text, mentions: participants.map(a => a.id)})
 sleep(7000)
 await Al.groupSettingUpdate(`${global.idgc}`, 'announcement')
-}, { scheduled: true, timezone: 'Asia/Jakarta' })
+}, { scheduled: true, timezone: 'Africa/Lagos' })
 
 cron.schedule('0 0 6 * * *', async () => {
 let text = '*[ System Notice ]* Waktu Pagi Tiba, Grup Akan Dibuka!'
 Al.groupSettingUpdate(`${global.idgc}`, 'not_announcement')
 sleep(7000)
 await Al.sendMessage(`${global.idgc}`, {text: text, mentions: participants.map(a => a.id)})
-}, { scheduled: true, timezone: 'Asia/Jakarta' })
+}, { scheduled: true, timezone: 'Africa/Lagos' })
 }
 
 if (global.autoRestart) {
@@ -1584,154 +1584,154 @@ console.log('\nSecara Otomatis Merestart Server...\n')
 await Al.sendMessage(global.owner+'@s.whatsapp.net', {text: `MeRestart Secara Otomatis...\n\nInfo Lebih Lanjut Ketik ${prefix}info`})
 await sleep(7000)
 process.exit()
-}, { scheduled: true, timezone: 'Asia/Jakarta' })
+}, { scheduled: true, timezone: 'Africa/Lagos' })
 
 cron.schedule('0 0 2 * * *', async () => {
 console.log('\nSecara Otomatis Merestart Server...\n')
 await Al.sendMessage(global.owner+'@s.whatsapp.net', {text: `MeRestart Secara Otomatis...\n\nInfo Lebih Lanjut Ketik ${prefix}info`})
 await sleep(7000)
 process.exit()
-}, { scheduled: true, timezone: 'Asia/Jakarta' })
+}, { scheduled: true, timezone: 'Africa/Lagos' })
 
 cron.schedule('0 0 3 * * *', async () => {
 console.log('\nSecara Otomatis Merestart Server...\n')
 await Al.sendMessage(global.owner+'@s.whatsapp.net', {text: `MeRestart Secara Otomatis...\n\nInfo Lebih Lanjut Ketik ${prefix}info`})
 await sleep(7000)
 process.exit()
-}, { scheduled: true, timezone: 'Asia/Jakarta' })
+}, { scheduled: true, timezone: 'Africa/Lagos' })
 
 cron.schedule('0 0 4 * * *', async () => {
 console.log('\nSecara Otomatis Merestart Server...\n')
 await Al.sendMessage(global.owner+'@s.whatsapp.net', {text: `MeRestart Secara Otomatis...\n\nInfo Lebih Lanjut Ketik ${prefix}info`})
 await sleep(7000)
 process.exit()
-}, { scheduled: true, timezone: 'Asia/Jakarta' })
+}, { scheduled: true, timezone: 'Africa/Lagos' })
 
 cron.schedule('0 0 5 * * *', async () => {
 console.log('\nSecara Otomatis Merestart Server...\n')
 await Al.sendMessage(global.owner+'@s.whatsapp.net', {text: `MeRestart Secara Otomatis...\n\nInfo Lebih Lanjut Ketik ${prefix}info`})
 await sleep(7000)
 process.exit()
-}, { scheduled: true, timezone: 'Asia/Jakarta' })
+}, { scheduled: true, timezone: 'Africa/Lagos' })
 
 cron.schedule('0 0 6 * * *', async () => {
 console.log('\nSecara Otomatis Merestart Server...\n')
 await Al.sendMessage(global.owner+'@s.whatsapp.net', {text: `MeRestart Secara Otomatis...\n\nInfo Lebih Lanjut Ketik ${prefix}info`})
 await sleep(7000)
 process.exit()
-}, { scheduled: true, timezone: 'Asia/Jakarta' })
+}, { scheduled: true, timezone: 'Africa/Lagos' })
 
 cron.schedule('0 0 7 * * *', async () => {
 console.log('\nSecara Otomatis Merestart Server...\n')
 await Al.sendMessage(global.owner+'@s.whatsapp.net', {text: `MeRestart Secara Otomatis...\n\nInfo Lebih Lanjut Ketik ${prefix}info`})
 await sleep(7000)
 process.exit()
-}, { scheduled: true, timezone: 'Asia/Jakarta' })
+}, { scheduled: true, timezone: 'Africa/Lagos' })
 
 cron.schedule('0 0 8 * * *', async () => {
 console.log('\nSecara Otomatis Merestart Server...\n')
 await Al.sendMessage(global.owner+'@s.whatsapp.net', {text: `MeRestart Secara Otomatis...\n\nInfo Lebih Lanjut Ketik ${prefix}info`})
 await sleep(7000)
 process.exit()
-}, { scheduled: true, timezone: 'Asia/Jakarta' })
+}, { scheduled: true, timezone: 'Africa/Lagos' })
 
 cron.schedule('0 0 9 * * *', async () => {
 console.log('\nSecara Otomatis Merestart Server...\n')
 await Al.sendMessage(global.owner+'@s.whatsapp.net', {text: `MeRestart Secara Otomatis...\n\nInfo Lebih Lanjut Ketik ${prefix}info`})
 await sleep(7000)
 process.exit()
-}, { scheduled: true, timezone: 'Asia/Jakarta' })
+}, { scheduled: true, timezone: 'Africa/Lagos' })
 
 cron.schedule('0 0 10 * * *', async () => {
 console.log('\nSecara Otomatis Merestart Server...\n')
 await Al.sendMessage(global.owner+'@s.whatsapp.net', {text: `MeRestart Secara Otomatis...\n\nInfo Lebih Lanjut Ketik ${prefix}info`})
 await sleep(7000)
 process.exit()
-}, { scheduled: true, timezone: 'Asia/Jakarta' })
+}, { scheduled: true, timezone: 'Africa/Lagos' })
 
 cron.schedule('0 0 11 * * *', async () => {
 console.log('\nSecara Otomatis Merestart Server...\n')
 await Al.sendMessage(global.owner+'@s.whatsapp.net', {text: `MeRestart Secara Otomatis...\n\nInfo Lebih Lanjut Ketik ${prefix}info`})
 await sleep(7000)
 process.exit()
-}, { scheduled: true, timezone: 'Asia/Jakarta' })
+}, { scheduled: true, timezone: 'Africa/Lagos' })
 
 cron.schedule('0 0 12 * * *', async () => {
 console.log('\nSecara Otomatis Merestart Server...\n')
 await Al.sendMessage(global.owner+'@s.whatsapp.net', {text: `MeRestart Secara Otomatis...\n\nInfo Lebih Lanjut Ketik ${prefix}info`})
 await sleep(7000)
 process.exit()
-}, { scheduled: true, timezone: 'Asia/Jakarta' })
+}, { scheduled: true, timezone: 'Africa/Lagos' })
 
 cron.schedule('0 0 13 * * *', async () => {
 console.log('\nSecara Otomatis Merestart Server...\n')
 await Al.sendMessage(global.owner+'@s.whatsapp.net', {text: `MeRestart Secara Otomatis...\n\nInfo Lebih Lanjut Ketik ${prefix}info`})
 await sleep(7000)
 process.exit()
-}, { scheduled: true, timezone: 'Asia/Jakarta' })
+}, { scheduled: true, timezone: 'Africa/Lagos' })
 
 cron.schedule('0 0 14 * * *', async () => {
 console.log('\nSecara Otomatis Merestart Server...\n')
 await Al.sendMessage(global.owner+'@s.whatsapp.net', {text: `MeRestart Secara Otomatis...\n\nInfo Lebih Lanjut Ketik ${prefix}info`})
 await sleep(7000)
 process.exit()
-}, { scheduled: true, timezone: 'Asia/Jakarta' })
+}, { scheduled: true, timezone: 'Africa/Lagos' })
 
 cron.schedule('0 0 15 * * *', async () => {
 console.log('\nSecara Otomatis Merestart Server...\n')
 await Al.sendMessage(global.owner+'@s.whatsapp.net', {text: `MeRestart Secara Otomatis...\n\nInfo Lebih Lanjut Ketik ${prefix}info`})
 await sleep(7000)
 process.exit()
-}, { scheduled: true, timezone: 'Asia/Jakarta' })
+}, { scheduled: true, timezone: 'Africa/Lagos' })
 
 cron.schedule('0 0 16 * * *', async () => {
 console.log('\nSecara Otomatis Merestart Server...\n')
 await Al.sendMessage(global.owner+'@s.whatsapp.net', {text: `MeRestart Secara Otomatis...\n\nInfo Lebih Lanjut Ketik ${prefix}info`})
 await sleep(7000)
 process.exit()
-}, { scheduled: true, timezone: 'Asia/Jakarta' })
+}, { scheduled: true, timezone: 'Africa/Lagos' })
 
 cron.schedule('0 0 17 * * *', async () => {
 console.log('\nSecara Otomatis Merestart Server...\n')
 await Al.sendMessage(global.owner+'@s.whatsapp.net', {text: `MeRestart Secara Otomatis...\n\nInfo Lebih Lanjut Ketik ${prefix}info`})
 await sleep(7000)
 process.exit()
-}, { scheduled: true, timezone: 'Asia/Jakarta' })
+}, { scheduled: true, timezone: 'Africa/Lagos' })
 
 cron.schedule('0 0 18 * * *', async () => {
 console.log('\nSecara Otomatis Merestart Server...\n')
 await Al.sendMessage(global.owner+'@s.whatsapp.net', {text: `MeRestart Secara Otomatis...\n\nInfo Lebih Lanjut Ketik ${prefix}info`})
 await sleep(7000)
 process.exit()
-}, { scheduled: true, timezone: 'Asia/Jakarta' })
+}, { scheduled: true, timezone: 'Africa/Lagos' })
 
 cron.schedule('0 0 19 * * *', async () => {
 console.log('\nSecara Otomatis Merestart Server...\n')
 await Al.sendMessage(global.owner+'@s.whatsapp.net', {text: `MeRestart Secara Otomatis...\n\nInfo Lebih Lanjut Ketik ${prefix}info`})
 await sleep(7000)
 process.exit()
-}, { scheduled: true, timezone: 'Asia/Jakarta' })
+}, { scheduled: true, timezone: 'Africa/Lagos' })
 
 cron.schedule('0 0 20 * * *', async () => {
 console.log('\nSecara Otomatis Merestart Server...\n')
 await Al.sendMessage(global.owner+'@s.whatsapp.net', {text: `MeRestart Secara Otomatis...\n\nInfo Lebih Lanjut Ketik ${prefix}info`})
 await sleep(7000)
 process.exit()
-}, { scheduled: true, timezone: 'Asia/Jakarta' })
+}, { scheduled: true, timezone: 'Africa/Lagos' })
 
 cron.schedule('0 0 21 * * *', async () => {
 console.log('\nSecara Otomatis Merestart Server...\n')
 await Al.sendMessage(global.owner+'@s.whatsapp.net', {text: `MeRestart Secara Otomatis...\n\nInfo Lebih Lanjut Ketik ${prefix}info`})
 await sleep(7000)
 process.exit()
-}, { scheduled: true, timezone: 'Asia/Jakarta' })
+}, { scheduled: true, timezone: 'Africa/Lagos' })
 
 cron.schedule('0 0 22 * * *', async () => {
 console.log('\nSecara Otomatis Merestart Server...\n')
 await Al.sendMessage(global.owner+'@s.whatsapp.net', {text: `MeRestart Secara Otomatis...\n\nInfo Lebih Lanjut Ketik ${prefix}info`})
 await sleep(7000)
 process.exit()
-}, { scheduled: true, timezone: 'Asia/Jakarta' })
+}, { scheduled: true, timezone: 'Africa/Lagos' })
 }
         
 if (global.groupOnly) {
