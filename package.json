@@ -5,8 +5,10 @@
   "main": "index.js",
   "type": "commonjs",
   "scripts": {
-     "start": "pm2 start index.js --deep-monitoring --attach --name macksyn",
-    "stop": "pm2 stop macksyn"
+      "run": "pm2 start . --deep-monitoring --attach --name Suhail || node .",
+            "suhail": "pm2 start . --deep-monitoring --attach --name Suhail || node .",
+            "start": "pm2 start . --attach --name Suhail",
+            "stop": "pm2 stop Suhail",
   },
   "author": "Alex Macksyn",
   "license": "MIT",
