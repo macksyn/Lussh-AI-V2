@@ -5814,16 +5814,16 @@ case 'daftar':
 case 'verify':
 case 'register':
 const isRegis = checkRegisteredUser(m.sender)
-if (isRegis) return m.reply('Malas, Kamu Udah Terdaftar Soalnya')
-if (!q.includes('.')) return m.reply('*Format Salah! Gunakan Dengan*\n\n*Contoh :* .daftar Sanjaya.16')
+if (isRegis) return m.reply('Hey, You Are Already A Registered User!')
+if (!q.includes('.')) return m.reply('❌ *Wrong Format! *\n\n*Example:* Register Alex Macksyn.26')
 const namaUser = q.substring(0, q.indexOf('.') - 0)
 const umurUser = q.substring(q.lastIndexOf('.') + 1)
 const serialUser = createSerial(20)
-if(isNaN(umurUser)) return m.reply('Umur harus berupa angka!!')
-if (namaUser.length >= 30) return m.reply(`Nama Kok Panjang, Maximal 30 Karakter`)
-if (umurUser > 40) return m.reply(`Umur Lu Terlalu Tua, Max Umur 40`)
-if (umurUser < 10) return m.reply(`Umur Lu Terlalu Muda, Min Umur 10`)
-let mzd = `*DAFTAR BERHASIL*\n\n⎋ Nama : ${namaUser}\n⎋ Umur : ${umurUser}\n\n⎋ Limit : ${isPremium ? 'Unlimited' : '30'}\n⎋ Register : ${tanggal}`
+if(isNaN(umurUser)) return m.reply('Age Must Be A Number!!')
+if (namaUser.length >= 30) return m.reply(`Your Name Is Too Long, Maximum Is 30 characters`)
+if (umurUser > 40) return m.reply(`You Are Too Old, Maximum Age Is 40`)
+if (umurUser < 16) return m.reply(`You Are Too Young, Minimum age is 16`)
+let mzd = `✅ *REGISTRATION SUCCESSFUL*\n\n⎋ Name : ${namaUser}\n⎋ Age : ${umurUser}\n\n⎋ Subscription : ${isPremium ? 'Unlimited' : '30'}\n⎋ Registeration Date : ${tanggal}`
 let veri = m.sender
 if (!m.isGroup) {
 addRegisteredUser(m.sender, namaUser, umurUser, serialUser)
@@ -5833,7 +5833,7 @@ showAdAttribution: true,
 mediaType: 1, 
 previewType: 'PHOTO',
 renderLargerThumbnail: false, 
-title: `SUCCESFULLY`, 
+title: `DATA CLOUD`, 
 body: ``, 
 description: 'Nothing',
 mediaType: 1,
@@ -5849,7 +5849,7 @@ showAdAttribution: true,
 mediaType: 1, 
 previewType: 'PHOTO',
 renderLargerThumbnail: false, 
-title: `SUCCESFULLY`, 
+title: `DATA CLOUD`, 
 body: ``, 
 description: 'Nothing',
 mediaType: 1,
