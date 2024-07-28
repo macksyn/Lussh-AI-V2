@@ -1,17 +1,6 @@
 const fs = require('fs')
 const chalk = require('chalk')
 const axios = require('axios');
-const express = require('express')
-const app = express()
-const port = process.env.PORT || 4000;
-
-app.get('/', (req, res) => {
-  res.send('Hello World!')
-})
-
-app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
-})
 
 // REMEMBER GUYS, THIS IS THE OFFICIAL CODE
 
@@ -38,6 +27,8 @@ global.thumb = "https://telegra.ph/file/6b25dc6f38b32804d7e59.jpg"
 global.thumb2 = "https://telegra.ph/file/c74dda31793574f84070e.jpg"
 global.mark = "https://telegra.ph/file/9b67cb5ed0ff661027366.jpg"
 global.themeemoji = '🌐'
+global.port =process.env.PORT
+global.appUrl=process.env.APP_URL || "https://lussh-ai1.onrender.com"
 
 global.api_smd = "https://api-smd-1.vercel.app";
 global.scan = "https://secret-garden-43998-4daad95d4561.herokuapp.com/";
