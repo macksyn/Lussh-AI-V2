@@ -12,4 +12,4 @@ RUN npm install || yarn install
 
 # Add additional Steps To Run...
 EXPOSE 3000
-CMD ["npm","start" ]
+CMD ["npm","start"]
