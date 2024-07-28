@@ -1,4 +1,4 @@
-const bot = require(__dirname + 'AiBotzz')
+const bot = require(__dirname + '/AiBotzz')
 const {
    spawn
 } = require('child_process')
