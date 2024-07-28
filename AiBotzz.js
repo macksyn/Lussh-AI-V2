@@ -5356,15 +5356,15 @@ case 'intro':{
 if (!isRegistered) return terdaftar()
 if (isBan) return terbanned()
 var intro =`0ཻུ۪۪ꦽꦼ̷⸙‹•══════════════♡᭄
-│       *「 Kartu Intro 」*
-│ *Nama     :* 
+│       *「 Intro Card 」*
+│ *Name     :* 
 │ *Gender   :* 
-│ *Umur      :* 
+│ *Age      :* 
 │ *Hobby    :* 
-│ *Kelas      :* 
-│ *Asal         :* 
-│ *Agama    :* 
-|  *Status     :* 
+│ *Birthday :* 
+│ *State    :* 
+│ *Religion :* 
+| *Country  :* 
 ╰═════ꪶ ཻུ۪۪ꦽꦼ̷⸙ ━ ━ ━ ━ ꪶ ཻུ۪۪ꦽꦼ̷⸙
 `
 Al.sendMessage(m.chat, {text: intro }, {quoted: floc})
