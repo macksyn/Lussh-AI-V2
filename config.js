@@ -63,7 +63,7 @@ global.APIKeys = {
 }
 
 //=== Bot Information 🐦
-global.pairingNumber = "2348089782988"
+global.pairingNumber = process.env.PAIRING_NUMBER || ""
 // Your whatsapp bot number
 global.prefix = ['-_-'] 
 // Dont Change It
