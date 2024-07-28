@@ -1,4 +1,4 @@
-const bot = require(__dirname + '/Aibotzz')
+const bot = require(__dirname + '/AiBotzz')
 const { VERSION } = require(__dirname + '/config')
 
 const start = async () => {
