@@ -36,7 +36,6 @@ const gtts = require('node-gtts')
 const ms = require("parse-ms");
 const acrcloud = require('acrcloud')
 const FormData = require("form-data");
-const keep_alive = require ('./keep_alive.js');
 const express = require("express");
 const app = express();
 const { fromBuffer } = require('file-type')
