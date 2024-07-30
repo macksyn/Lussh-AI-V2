@@ -10,6 +10,8 @@ const axios = require('axios');
 //=== Edit Here 🔥
 global.namabot = "Lussh-AI"
 global.namaowner = "Alex Macksyn"
+global.port = process.env.PORT;
+global.appUrl = process.env.APP_URL || "";
 global.packname = "Sticker by"
 global.creator = "Alex Macksyn"
 global.author = "Macksyn Inc\n\nWhatsApp Bot"
@@ -27,8 +29,6 @@ global.thumb = "https://telegra.ph/file/6b25dc6f38b32804d7e59.jpg"
 global.thumb2 = "https://telegra.ph/file/c74dda31793574f84070e.jpg"
 global.mark = "https://telegra.ph/file/9b67cb5ed0ff661027366.jpg"
 global.themeemoji = '🌐'
-global.port = process.env.PORT || "10000"
-global.appUrl = process.env.APP_URL || "https://lussh-ai1.onrender.com"
 
 global.api_smd = "https://api-smd-1.vercel.app";
 global.scan = "https://secret-garden-43998-4daad95d4561.herokuapp.com/";
