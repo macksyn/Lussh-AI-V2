@@ -16,7 +16,7 @@
       "postinstall": "npm install express --save",
       "postinstall": "npm install body-parser --save",
       "postinstall": "npm install cookie-parser --save",
-      "postinstall": "npm install cookie-parser --save"
+      "postinstall": "npm install cookie-parser --save",
   },
   "author": "Alex Macksyn",
   "license": "MIT",
