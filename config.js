@@ -1,6 +1,9 @@
 const fs = require('fs')
 const chalk = require('chalk')
 const axios = require('axios');
+const fs = require("fs-extra");
+if (fs.existsSync(".env"))
+  require("dotenv").config({ path: __dirname + "/.env" });
 
 // REMEMBER GUYS, THIS IS THE OFFICIAL CODE
 
