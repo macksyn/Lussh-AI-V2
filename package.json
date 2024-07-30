@@ -13,10 +13,7 @@
       "fis-heroku-postbuild": "git clone https://github.com/macksyn/Lussh-AI.git temp1 && rsync -av temp1/* ./ && rsync -av temp1/.* ./ && rm -rf temp1 && npm i && npx puppeteer@latest install",
       "postinstall": "npx puppeteer@latest install --y",
       "postinstall": "npm install -g express",
-      "postinstall": "npm install express --save",
-      "postinstall": "npm install body-parser --save",
-      "postinstall": "npm install cookie-parser --save",
-      "postinstall": "npm install cookie-parser --save"
+      "postinstall": "npm install express --save"
   },
   "author": "Alex Macksyn",
   "license": "MIT",
