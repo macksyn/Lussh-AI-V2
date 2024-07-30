@@ -3,6 +3,7 @@ const {
    spawn
 } = require('child_process')
 const path = require('path')
+const keep_alive = require ('./keep_alive.js')
 
 function start() {
    let args = [path.join(__dirname, 'main.js'), ...process.argv.slice(2)]
