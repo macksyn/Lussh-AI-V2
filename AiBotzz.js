@@ -18125,3 +18125,39 @@ isForwarded: false
 }})
     }
 }
+let Appurls = [];
+if (global.appUrl && /http/gi.test(global.appUrl)) {
+  Appurls = [global.appUrl, "http://localhost:" + quickport];
+}
+if (process.env.REPL_ID) {
+  Appurls.push("https://" + process.env.REPL_ID + ".pike.replit.dev");
+  Appurls.push("https://" + process.env.REPL_ID + "." + (process.env.REPLIT_CLUSTER || "pike") + ".replit.dev");
+}
+if (process.env.REPL_SLUG) {
+  Appurls.push("https://" + process.env.REPL_SLUG + "." + process.env.REPL_OWNER + ".repl.co");
+}
+if (process.env.PROJECT_DOMAIN) {
+  Appurls.push("https://" + process.env.PROJECT_DOMAIN + ".glitch.me");
+}
+if (process.env.CODESPACE_NAME) {
+  Appurls.push("https://" + process.env.CODESPACE_NAME + ".github.dev");
+}
+function keepAlive() {
+  setInterval(() => {
+    for (let _0x215660 = 0; _0x215660 < Appurls.length; _0x215660++) {
+      const _0x16cd6e = Appurls[_0x215660];
+      if (/(\/\/|\.)undefined\./.test(_0x16cd6e)) {
+        continue;
+      }
+      try {
+        axios.get(_0x16cd6e);
+      } catch (_0x231f6e) {}
+      try {
+        fetch(_0x16cd6e);
+      } catch (_0x5e546e) {}
+    }
+  }, 300000);
+}
+if (Array.isArray(Appurls)) {
+  keepAlive();
+}
