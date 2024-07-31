@@ -99,7 +99,7 @@ global.autoTyping = false
 // False (Auto Typing)
 global.autoBio = true
 // False (Auto Bio)
-global.autoRestart = true
+global.autoRestart = false
 // False (Auto Restart)
 // Auto Restart Suitable For Bad Panels
 global.mess = {
