@@ -12697,15 +12697,15 @@ m.reply(`Kirim perintah ${prefix + command} on/off\n\nContoh: ${prefix + command
 break
 //========================
 case 'autoswview':
-case 'autostatusview':{
+case 'autoreadsw':{
 if (!isCreator) return m.reply('🚫 Owner Special Features!')
 if (isBan) return terbanned()
 if (args.length < 1) return m.reply('on/off?')
 if (args[0] === 'on') {
-autoswview = true
+autoreadsw = true
 m.reply(`✅ Auto Status View Successfully Activated!`)
 } else if (args[0] === 'off') {
-autoswview = false
+autoreadsw = false
 m.reply(`✅ Auto Statua View Successfully Disabled!`)
 }
 }
