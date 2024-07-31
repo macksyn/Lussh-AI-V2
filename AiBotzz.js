@@ -150,9 +150,9 @@ const readmore = more.repeat(4001)
 const bulanx = moment.tz('Africa/Lagos').format('MM/MMMM')
 const tahun = moment.tz('Africa/Lagos').format('YYYY')
 const tanggal = moment().tz("Africa/Lagos").format("dddd, MMMM Do YYYY")
-const jam = moment(Date.now()).tz('Africa/Lagos').locale('id').format('HH:mm:ss a')
-const jam2 = moment(Date.now()).tz('Africa/Lagos').locale('id').format('HH:mm')
-const salam = moment(Date.now()).tz("Africa/Lagos").locale('id').format('a')
+const jam = moment(Date.now()).tz('Africa/Lagos').locale('en').format('HH:mm:ss a')
+const jam2 = moment(Date.now()).tz('Africa/Lagos').locale('en').format('HH:mm')
+const salam = moment(Date.now()).tz("Africa/Lagos").locale('en').format('a')
 const timeWib = moment().tz('Africa/Lagos').format('HH:mm:ss')
 const wibTime = moment().tz('Africa/Lagos').format('HH:mm:ss')
 const isOwner = [botNumber, ...owner].map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
@@ -575,7 +575,7 @@ let hari = Math.floor(distance / (1000 * 60 * 60 * 24));
 let jam = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
 let menit = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
 let detik = Math.floor((distance % (1000 * 60)) / 1000);
-return hari + ' Day ' + jam + ' Hour ' + menit + ' Minute ' + detik + ' Seconds '
+return hari + ' Days ' + jam + ' Hours ' + menit + ' Minutes ' + detik + ' Seconds '
 }
 //========================
 function happymod(query) {
@@ -12698,15 +12698,15 @@ break
 //========================
 case 'autoswview':
 case 'autostatusview':{
-if (!isCreator) return m.reply('Fitur Khusus Owner!')
+if (!isCreator) return m.reply('🚫 Owner Special Features!')
 if (isBan) return terbanned()
 if (args.length < 1) return m.reply('on/off?')
 if (args[0] === 'on') {
 autoswview = true
-m.reply(`Autoswview berhasil diaktifkan`)
+m.reply(`✅ Auto Status View Successfully Activated!`)
 } else if (args[0] === 'off') {
 autoswview = false
-m.reply(`Autoswview berhasil dinonaktifkan`)
+m.reply(`✅ Auto Statua View Successfully Disabled!`)
 }
 }
 break
