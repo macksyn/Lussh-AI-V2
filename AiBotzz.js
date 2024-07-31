@@ -12696,21 +12696,6 @@ m.reply(`Kirim perintah ${prefix + command} on/off\n\nContoh: ${prefix + command
 }
 break
 //========================
-case 'autoswview':
-case 'autoreadsw':{
-if (!isCreator) return m.reply('🚫 Owner Special Features!')
-if (isBan) return terbanned()
-if (args.length < 1) return m.reply('on/off?')
-if (args[0] === 'on') {
-autoreadsw = true
-m.reply(`✅ Auto Status View Successfully Activated!`)
-} else if (args[0] === 'off') {
-autoreadsw = false
-m.reply(`✅ Auto Statua View Successfully Disabled!`)
-}
-}
-break
-//========================
 case 'qc': 
 case 'qcstiker': {
 if (isLimit(m.sender, isPremium, isCreator, limitCount, limit)) return m.reply(`Limit kamu sudah habis, Silahkan ketik ${prefix}limit untuk mengecek limit kamu`)
