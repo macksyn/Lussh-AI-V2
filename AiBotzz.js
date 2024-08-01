@@ -114,6 +114,7 @@ let antilinkig =JSON.parse(fs.readFileSync('./database/antilinkig.json'));
 let antilinkfb =JSON.parse(fs.readFileSync('./database/antilinkfb.json'));
 let antidel =JSON.parse(fs.readFileSync('./database/antidel.json'));
 let antivirtex =JSON.parse(fs.readFileSync('./database/antivirtex.json'));
+let autoreadsw =JSON.parse(fs.readFileSync('./database/autoreadsw.json'));
 let antilinktwt =JSON.parse(fs.readFileSync('./database/antilinktwt.json'));
 let ntnsfw = JSON.parse(fs.readFileSync('./search/function/nsfw.json'))
 let antilinksfile =JSON.parse(fs.readFileSync('./database/antilinksfile.json'));
