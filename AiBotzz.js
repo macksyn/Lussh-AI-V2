@@ -12701,7 +12701,7 @@ break
 case 'autoswview':
 case 'autostatusview':{
 if (!isCreator) return m.reply('🚫 Owner Special Features!')
-if (!isBan) return terbanned()
+if (isBan) return terbanned()
 if (args.length < 1) return m.reply ('On/Off?')
 if (args[0] ==='on') {
 autoswview = true
