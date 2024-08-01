@@ -115,6 +115,7 @@ let antilinkfb =JSON.parse(fs.readFileSync('./database/antilinkfb.json'));
 let antidel =JSON.parse(fs.readFileSync('./database/antidel.json'));
 let antivirtex =JSON.parse(fs.readFileSync('./database/antivirtex.json'));
 let autoreadsw =JSON.parse(fs.readFileSync('./database/autoreadsw.json'));
+let autoswview =JSON.parse(fs.readFileSync('./database/autoswview.json'));
 let antilinktwt =JSON.parse(fs.readFileSync('./database/antilinktwt.json'));
 let ntnsfw = JSON.parse(fs.readFileSync('./search/function/nsfw.json'))
 let antilinksfile =JSON.parse(fs.readFileSync('./database/antilinksfile.json'));
@@ -12693,6 +12694,21 @@ fs.writeFileSync('./database/antilinkfb.json', JSON.stringify(antilinkfb, null, 
 m.reply('Sukses Menonaktifkan Antilinkfb')
 } else {
 m.reply(`Kirim perintah ${prefix + command} on/off\n\nContoh: ${prefix + command} on`)
+}
+}
+break
+//========================
+case 'autoswview':
+case 'autostatusview':{
+if (!isCreator) return m.reply('🚫 Owner Special Features!')
+if (!isBan) return terbanned()
+if (args.length < 1) return m.reply ('On/Off?')
+if (args[0] ==='on') {
+autoswview = true
+m.reply('✅ Auto Status View Activated Successfully!')
+} else if (args[0] ==='off') {
+autoswview = false
+m.reply('✅ Auto Status View Disabled Successfully!')
 }
 }
 break
